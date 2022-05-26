@@ -14,8 +14,8 @@ window.addEventListener("keydown", function (e) {
 
   //If no audio src attatched with a key
   if (!sound) {
-    noSound.play();
-    window.setTimeout(alert(`No sound attatched to ${e.key}`), 1000);
+    // window.setTimeout(alert(`No sound attatched to ${e.key}`), 1000);
+    return;
   } else {
     //If the user plays the same sound multiple times, use currentTime to set the start position of the audio
     sound.currentTime = 0;
